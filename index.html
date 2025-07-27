@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreetSmart Supply</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>StreetSmart Supply</h1>
+        <p>Connecting street food vendors with trusted raw material suppliers</p>
+    </header>
+
+    <main>
+        <section class="filters">
+            <label for="location">Filter by Location:</label>
+            <select id="location" onchange="filterSuppliers()">
+                <option value="All">All</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolkata">Kolkata</option>
+            </select>
+        </section>
+
+        <section id="supplier-list" class="suppliers"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
